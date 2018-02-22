@@ -38,6 +38,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+        //set data to label in DataviewController
         dataViewController.dataObject = self.pageData[index]
         return dataViewController
     }
